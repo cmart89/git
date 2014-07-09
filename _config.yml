@@ -2,7 +2,7 @@
 title: "News from London"
 email: ryan@mijingo.com
 description: "A daily journal by Edward Hyde."
-baseurl: ""
+baseurl: "/london-news"
 url: "http://localhost:4000"
 
 # Build settings
