@@ -20,7 +20,7 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "activesupport", "~> 5.0.0.1"
+   gem 'activesupport', '4.2.6'
    gem "jekyll-feed", "~> 0.6"
    gem "html-proofer", "~> 3.3.0"
 end
