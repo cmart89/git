@@ -72,6 +72,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  activesupport (~> 5.0.0.1)
   html-proofer (~> 3.3.0)
   jekyll (= 3.3.0)
   jekyll-feed (~> 0.6)
