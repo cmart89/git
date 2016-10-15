@@ -22,5 +22,5 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem 'activesupport', '4.2.6'
    gem "jekyll-feed", "~> 0.6"
-   gem "html-proofer", "~> 3.3.0"
+   gem "html-proofer", "3.3.0"
 end
