@@ -74,7 +74,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (= 4.2.6)
-  html-proofer (~> 3.3.0)
+  html-proofer (= 3.3.0)
   jekyll (= 3.3.0)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
