@@ -30,6 +30,7 @@ theme: minima
 gems:
   - jekyll-feed
   - html-proofer
+  - activesupport
 exclude:
   - Gemfile
   - Gemfile.lock
