@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.30
+  - 2.2
 script:
   - chmod +x script/build
   - ./script/build
