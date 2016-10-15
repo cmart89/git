@@ -5,6 +5,7 @@ install:
   - gem install activesupport 
   - gem install html-proofer
   - gem install jekyll
+  - bundle install
 script:
   - chmod +x scripts/build
   - ./scripts/build
