@@ -11,8 +11,7 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add master https://cmart89:28aaae0172be472cf4162691d3afa12ead23fd9c@github.com/cmart89/build.git> /dev/null 2>&1
-  git push --quiet --set-upstream master master
+  git push https://cmart89:28aaae0172be472cf4162691d3afa12ead23fd9c@github.com/cmart89/build.git head:master> /dev/null 2>&1
 }
 
 setup_git
