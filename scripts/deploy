@@ -1,10 +1,14 @@
-sudo apt-get install -qq ncftp
+setup_git() {
+  git config --global user.email "chrismartin1989@gmail.com"
+  git config --global user.name "cmart89"
+}
 
-ncftp -u "$USERNAME" -p "$PASSWORD" $HOST<<EOF
-rm -rf site/wwwroot
-mkdir site/wwwroot
-quit
-EOF
+commit_website_files() {
+  git checkout -b master
+  git add . *.html
+  git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+}
 
-cd _site
-ncftpput -R -v -u "$USERNAME" -p "$PASSWORD" $HOST /site/wwwroot .
+upload_files() {
+  git remote add origin-pages https://cmart89:28aaae0172be472cf4162691d3afa12ead23fd9c@github.com/cmart89/build.git> /dev/null 2>&1
+  git push --quiet --set-upstream master master
