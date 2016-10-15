@@ -2,7 +2,8 @@ language: ruby
 rvm:
   - 2.2
 install:
-  -  gem install html-proofer
+  - gem install activesupport 
+  - gem install html-proofer 
 script:
   - chmod +x scripts/build
   - ./scripts/build
