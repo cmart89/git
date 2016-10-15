@@ -9,9 +9,9 @@ install:
 script:
   - chmod +x scripts/build
   - ./scripts/build
-after_success:
-  - chmod +x scripts/deploy
-  - ./scripts/deploy
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+deploy:
+  provider: azure_web_apps
+  verbose: true
