@@ -10,7 +10,7 @@ script:
   - chmod +x scripts/build
   - ./scripts/build
 before_deploy: 
-  - cd _site/about
+  - cd /home/travis/build/cmart89/git/_site
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
