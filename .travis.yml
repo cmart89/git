@@ -8,8 +8,7 @@ install:
   - bundle install
 script:
   - chmod +x scripts/build
-  - ./scripts/build
-before_deploy: 
+  - ./scripts/builds 
   - cd /home/travis/build/cmart89/git/_site
   - echo $PWD
 env:
