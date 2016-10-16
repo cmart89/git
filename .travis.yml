@@ -9,12 +9,11 @@ install:
 script:
   - chmod +x scripts/build
   - ./scripts/build 
-  - cd /home/travis/build/cmart89/git/_site/
-  - echo $PWD
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 deploy:
   skip_cleanup: true 
   provider: azure_web_apps
+  local_dir: _site
   verbose: true
