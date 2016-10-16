@@ -14,5 +14,6 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 deploy:
   skip_cleanup: true
+  file: _site/
   provider: azure_web_apps
   verbose: true
