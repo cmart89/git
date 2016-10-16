@@ -20,5 +20,6 @@ deploy:
   file: "*/_site/*.html" 
   file_glob: true
   provider: azure_web_apps
-  verbose: true 
+  verbose: true
+sudo: false  
   
