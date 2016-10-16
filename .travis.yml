@@ -20,5 +20,5 @@ deploy:
   file_glob: true
   file: "build/distributions/worktrail-app-hub-sync*.zip"
   provider: azure_web_apps
-  verbose: true
+  verbose: true 
   
