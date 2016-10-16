@@ -12,7 +12,8 @@ script:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-before_deploy: cd /site/
+before_deploy: 
+  - cd $TRAVIS_BUILD_DIR/site/
 deploy:
   skip_cleanup: true
   file: _site/
