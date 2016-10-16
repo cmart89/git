@@ -13,5 +13,6 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 deploy:
+  skip_cleanup: true
   provider: azure_web_apps
   verbose: true
