@@ -9,7 +9,7 @@ install:
 script:
   - chmod +x scripts/build
   - ./scripts/build 
-  - cd /home/travis/build/cmart89/git/_site
+  - cd /home/travis/build/cmart89/git/_site/
   - echo $PWD
 env:
   global:
