@@ -11,7 +11,7 @@ script:
   - ./scripts/build
 before_deploy: 
   - cd /home/travis/build/cmart89/git/_site
-  - echo %cd% test
+  - echo $PWD
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
