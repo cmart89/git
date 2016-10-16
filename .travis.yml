@@ -12,6 +12,7 @@ script:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+before_deploy: cd /site/
 deploy:
   skip_cleanup: true
   file: _site/
