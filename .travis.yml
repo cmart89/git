@@ -16,6 +16,9 @@ before_deploy:
   - chmod +x scripts/before_deploy
   - ./scripts/before_deploy 
 deploy:
-  skip_cleanup: true 
+  skip_cleanup: true
+  file_glob: true
+  file: "${_site}"  
   provider: azure_web_apps
   verbose: true
+  
