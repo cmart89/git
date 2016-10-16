@@ -15,5 +15,5 @@ env:
 deploy:
   skip_cleanup: true 
   provider: azure_web_apps
-  local_dir: _site
+  local_dir: _site 
   verbose: true
