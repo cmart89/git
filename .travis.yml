@@ -16,6 +16,6 @@ before_deploy:
   - cd _site/
 deploy:
   skip_cleanup: true
-  file: _site/
+  file: _site/ 
   provider: azure_web_apps
   verbose: true
