@@ -18,7 +18,7 @@ before_deploy:
 deploy:
   skip_cleanup: true
   file_glob: true
-  file: "_site"   
+  file: "build/distributions/worktrail-app-hub-sync*.zip"
   provider: azure_web_apps
   verbose: true
   
